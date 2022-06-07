@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript Counter App by Gary Tate</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <button class="btn btn-sm btn-outline-light info-btn" onclick="date()">
+          Enter date
+        </button>
+        <button class="btn btn-sm btn-outline-light info-btn" onclick="venue()">
+          Enter venue name
+        </button>
+        <h3 class="date">Date:</h3>
+        <h1 class="venue-name">Name of venue</h1>
+
+        <h1 class="number">0</h1>
+      </div>
+      <div class="dice">
+        <img
+          class="img1 minues"
+          src="images/minus.png"
+          alt="minus"
+          onclick="takeAway()"
+        />
+        <img
+          class="img1 plus"
+          src="images/plus.png"
+          alt="plus"
+          onclick="add()"
+        />
+      </div>
+
+      <div>
+        <button
+          class="btn btn-large btn-outline-warning btn-block play-btn"
+          onclick="reset()"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="test.js"></script>
+  </body>
+
+  <footer>
+    <p>Created by Gary Tate</p>
+  </footer>
+</html>
